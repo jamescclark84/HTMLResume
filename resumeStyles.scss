@@ -1,4 +1,5 @@
-$page-accent-color: #222;
+$border-color: #eee;
+
 @mixin heading() {
   &::before {
     content: "";
@@ -29,16 +30,14 @@ body {
     min-height: inherit;
     table-layout: fixed;
     width: 8.5in;
-    // height: 11in;
 
     div.left-section {
-      // background: $page-accent-color;
       width: 200px;
       display: table-cell;
       padding: 15px;
       box-sizing: initial;
       color: #222;
-      border-right: solid 1px #eee;
+      border-right: solid 1px $border-color;
 
       .section {
         .heading {
@@ -49,9 +48,7 @@ body {
           border-bottom: 1px solid #d5d6d6;
           border-top: 1px solid #d5d6d6;
           background-color:rgba(50,50,50, 0.25);
-          // &::before {
-          //   background: #003d73;
-          // }
+       
         }
 
         .para {
@@ -73,8 +70,8 @@ body {
       .heading {
         @include heading;
         color: $page-accent-color;
-        border-bottom: 1px solid #d5d6d6;
-        border-top: 1px solid #d5d6d6;
+        border-bottom: 1px solid $border-color;
+        border-top: 1px solid $border-color;
         padding: 5px;
         font-size: 14pt;
       }
@@ -140,8 +137,8 @@ body {
 
       .paraHeader {
         font-weight: 700;
-        border-bottom: solid 1px #eee;
-        border-top:solid 1px #eee;
+        border-bottom: solid 1px $border-color;
+        border-top:solid 1px $border-color;
       }
 
       span {
