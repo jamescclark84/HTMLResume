@@ -69,7 +69,6 @@ body {
     .section {
       .heading {
         @include heading;
-        color: $page-accent-color;
         border-bottom: 1px solid $border-color;
         border-top: 1px solid $border-color;
         padding: 5px;
@@ -153,5 +152,12 @@ body {
       font-size: 14pt;
       padding-top: 3px;
     }
+  }
+
+  div.codeLink{
+    display:table-cell;
+    font-size:8pt;
+    color:#555;    
+    text-align: center;
   }
 }
