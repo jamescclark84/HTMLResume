@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
 .bold {
   font-weight: 700;
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: "Work Sans", sans-serif;
   color: #343434;
 }
 body .textRight {
@@ -132,6 +134,9 @@ body .section .name {
 body .section .jobTitle {
   font-size: 14pt;
   padding-top: 3px;
+}
+body p.summary {
+  font-weight: 600;
 }
 body div.codeLink {
   display: table-cell;

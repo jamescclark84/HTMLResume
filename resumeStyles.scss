@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
+
 $border-color: #eee;
 
 @mixin heading() {
@@ -17,7 +21,7 @@ $border-color: #eee;
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   color: #343434;
 
   .textRight {
@@ -152,6 +156,10 @@ body {
       font-size: 14pt;
       padding-top: 3px;
     }
+  }
+
+  p.summary{
+    font-weight: 600;
   }
 
   div.codeLink{
