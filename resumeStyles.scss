@@ -1,0 +1,160 @@
+$page-accent-color: #222;
+@mixin heading() {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.8);
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #343434;
+
+  .textRight {
+    text-align: right;
+  }
+
+  div.content {
+    border-collapse: collapse;
+    display: table;
+    min-height: inherit;
+    table-layout: fixed;
+    width: 8.5in;
+    // height: 11in;
+
+    div.left-section {
+      // background: $page-accent-color;
+      width: 200px;
+      display: table-cell;
+      padding: 15px;
+      box-sizing: initial;
+      color: #222;
+      border-right: solid 1px #eee;
+
+      .section {
+        .heading {
+          @include heading;
+          margin-left: -15px;
+          margin-right: -15px;
+          padding: 0 15px;
+          border-bottom: 1px solid #d5d6d6;
+          border-top: 1px solid #d5d6d6;
+          background-color:rgba(50,50,50, 0.25);
+          // &::before {
+          //   background: #003d73;
+          // }
+        }
+
+        .para {
+          .title {
+            font-size: 14pt;
+          }
+        }
+      }
+    }
+  }
+  div.right-section {
+    display: table-cell;
+    letter-spacing: 0.2px;
+    padding: 15px;
+    vertical-align: top;
+    font-size:10pt;
+
+    .section {
+      .heading {
+        @include heading;
+        color: $page-accent-color;
+        border-bottom: 1px solid #d5d6d6;
+        border-top: 1px solid #d5d6d6;
+        padding: 5px;
+        font-size: 14pt;
+      }
+
+      div.jobColumn {
+        margin-left: 120px;
+        position:relative;
+
+        .title{
+          font-size:12pt;
+          padding:3px 0;
+          text-decoration: underline;
+        }
+
+        .company{
+          margin-top: 2px;
+          font-style: italic;
+        }
+
+        .duties{
+          margin-top: -9px;
+          position:relative;
+          left: -125px;
+          width:130%;
+        }
+
+        div.jobDates {
+          position: absolute;
+          margin-left: 0;
+          width: 100px;
+          left: -115px;
+          font-weight: 700;
+          padding-top:3px;
+        }
+      }
+    }
+  }
+  .section {
+    position: relative;
+
+    &.cont {
+      padding-top: 10px;
+    }
+
+    .heading {
+      position: relative;
+      font-weight: 700;
+
+      .sectionTitle {
+        padding: 5px 0;
+        text-align: left;
+        position: relative;
+      }
+    }
+    .para {
+      padding: 3px 0 5px 0;
+      position: relative;
+      margin-left: 0 !important;
+      font-size: 10pt;
+      line-height: 20px;
+      width: 100%;
+      word-wrap: break-word;
+
+      .paraHeader {
+        font-weight: 700;
+        border-bottom: solid 1px #eee;
+        border-top:solid 1px #eee;
+      }
+
+      span {
+        display: block;
+      }
+    }
+    .name {
+      font-weight: 700;
+      font-size: 25pt;
+    }
+    .jobTitle {
+      font-size: 14pt;
+      padding-top: 3px;
+    }
+  }
+}

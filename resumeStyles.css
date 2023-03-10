@@ -1,0 +1,136 @@
+.bold {
+  font-weight: 700;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #343434;
+}
+body .textRight {
+  text-align: right;
+}
+body div.content {
+  border-collapse: collapse;
+  display: table;
+  min-height: inherit;
+  table-layout: fixed;
+  width: 8.5in;
+}
+body div.content div.left-section {
+  width: 200px;
+  display: table-cell;
+  padding: 15px;
+  box-sizing: initial;
+  color: #222;
+  border-right: solid 1px #eee;
+}
+body div.content div.left-section .section .heading {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 0 15px;
+  border-bottom: 1px solid #d5d6d6;
+  border-top: 1px solid #d5d6d6;
+  background-color: rgba(50, 50, 50, 0.25);
+}
+body div.content div.left-section .section .heading::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  filter: brightness(0.8);
+}
+body div.content div.left-section .section .para .title {
+  font-size: 14pt;
+}
+body div.right-section {
+  display: table-cell;
+  letter-spacing: 0.2px;
+  padding: 15px;
+  vertical-align: top;
+  font-size: 10pt;
+}
+body div.right-section .section .heading {
+  color: #222;
+  border-bottom: 1px solid #d5d6d6;
+  border-top: 1px solid #d5d6d6;
+  padding: 5px;
+  font-size: 14pt;
+}
+body div.right-section .section .heading::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  filter: brightness(0.8);
+}
+body div.right-section .section div.jobColumn {
+  margin-left: 120px;
+  position: relative;
+}
+body div.right-section .section div.jobColumn .title {
+  font-size: 12pt;
+  padding: 3px 0;
+  text-decoration: underline;
+}
+body div.right-section .section div.jobColumn .company {
+  margin-top: 2px;
+  font-style: italic;
+}
+body div.right-section .section div.jobColumn .duties {
+  margin-top: -9px;
+  position: relative;
+  left: -125px;
+  width: 130%;
+}
+body div.right-section .section div.jobColumn div.jobDates {
+  position: absolute;
+  margin-left: 0;
+  width: 100px;
+  left: -115px;
+  font-weight: 700;
+  padding-top: 3px;
+}
+body .section {
+  position: relative;
+}
+body .section.cont {
+  padding-top: 10px;
+}
+body .section .heading {
+  position: relative;
+  font-weight: 700;
+}
+body .section .heading .sectionTitle {
+  padding: 5px 0;
+  text-align: left;
+  position: relative;
+}
+body .section .para {
+  padding: 3px 0 5px 0;
+  position: relative;
+  margin-left: 0 !important;
+  font-size: 10pt;
+  line-height: 20px;
+  width: 100%;
+  word-wrap: break-word;
+}
+body .section .para .paraHeader {
+  font-weight: 700;
+  border-bottom: solid 1px #eee;
+  border-top: solid 1px #eee;
+}
+body .section .para span {
+  display: block;
+}
+body .section .name {
+  font-weight: 700;
+  font-size: 25pt;
+}
+body .section .jobTitle {
+  font-size: 14pt;
+  padding-top: 3px;
+}/*# sourceMappingURL=resumeStyles.css.map */
